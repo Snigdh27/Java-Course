@@ -1,0 +1,28 @@
+JDBC -> Java Database Connectivity 
+
+Connect Java with Database we require connectivity, this is referred to as JDBC
+
+1. import the package (java.sql.*)
+2. load and register the driver
+    (i) load
+    (ii) Register -> forName("com.mysql.jdbc.driver")
+3. establish the connection
+4. create the statement -> statement,prepared statement, callable statement
+5. execute the query
+6. process result
+7. close connection
+
+import java.sql.*
+main(){
+    Class.forName("driver_name");
+    Connection conn = driver_manager.getConnection(url,uername,password)
+    statement st = conn.createStatement()
+    Resultset rs = st.execute('Select * from student');
+    while(rs.next()){
+        sout(rs.getInt(1)+" "+rs.getString(2));
+    }
+    st.close();
+    conn.close();
+}
+
+SQL -> DDL(structure of database), DML(manipulation),DQL(fire query)
