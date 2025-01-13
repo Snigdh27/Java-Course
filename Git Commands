@@ -1,0 +1,58 @@
+Version Control
+
+1. Version Control System
+2. Centralised Version Control System
+3. Distributed Version Control System
+
+Git commands
+
+git --version (for checking the git versions)
+
+SET UP THE CONFIGURATION FOR GIT
+git config --global --list
+git config --global user.name "name"
+git config --global user.email "emaid-id"
+
+Working Directory -> Staging Area
+
+git status -> to track the changes of files
+git init -> to initialise the git repository
+
+git init -b main (by default we get master to this will give main)
+
+TO ADD TO STAGING AREA
+git add "filename"
+
+TO CHECK THE LOG AREA
+git log
+
+git commit -m "Commit Message"
+git diff -> to check the difference between files
+
+git rm --cached creds.txt
+
+
+GITHUB, GITLAB, BITBUCKED
+
+INTEGRATION WITH GITHUB
+
+git clone "repository_link"
+git branch -M main
+ssh-keygen -o (generating public and private key)
+.ssh -> cat id_rsa.pub
+ 
+ Github -> Settings -> SSH -> New SSH Key -> Add title and key
+ 
+ git remote add origin ssh_link
+ git push -u origin main
+ git tag v1.1 -m "27th June release"
+ git tag
+ git push origin v1.0
+ 
+ git log --pretty=oneline
+ 
+ GIT BRANCH
+ git branch --all
+ git branch
+ git branch -d branch_name (delete the branch)
+ 
